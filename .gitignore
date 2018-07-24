@@ -1,5 +1,6 @@
 # Application
 app/plugins/*
+!app/plugins/revslider
 app/upgrade
 app/uploads/*
 node_modules

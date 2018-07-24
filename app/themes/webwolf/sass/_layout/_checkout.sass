@@ -5,13 +5,19 @@
   &__item
     display: flex
     max-height: 140px
+    +media-breakpoint-down(xs)
+      max-height: 92px
 
   &__item-image
     margin-right: 28px
+    +media-breakpoint-down(xs)
+      margin-right: 0
     img
       max-width: 140px
       width: 100%
       height: auto
+      +media-breakpoint-down(xs)
+        max-width: 92px
 
   &__item-info
     flex: 0 0 calc(100% - 168px - 40px)
@@ -20,14 +26,42 @@
     display: flex
     justify-content: space-between
     align-items: center
+    +media-breakpoint-down(md)
+      align-items: flex-start
+      flex-wrap: wrap
+      padding: 25px 10px 25px 35px
+
+    +media-breakpoint-down(xs)
+      flex: 0 0 calc(100% - 110px)
+      padding: 0 0 0 15px
 
   .lsp-block-cart-item-row-name
     font-size: 1.6rem
     color: $white-text
     line-height: 1.25
+    width: 40%
+    +media-breakpoint-down(md)
+      width: 80%
+
+    +media-breakpoint-down(xs)
+      margin-top: 10px
+      max-height: 20px
+      overflow: hidden
+      max-width: 133px
 
   .lsp-block-cart-item-row-subname
     display: flex
+    width: 40%
+    +media-breakpoint-down(md)
+      width: 20%
+      flex-direction: column
+      align-items: flex-end
+
+  .lsp-block-cart-item-price-c
+    width: 20%
+    +media-breakpoint-down(md)
+      transform: translateY(-40px)
+      width: 80%
 
   .lsp-button-minus,
   .lsp-button-plus,
@@ -35,6 +69,9 @@
     display: block
     width: 40px
     height: 40px
+    +media-breakpoint-down(md)
+      width: 30px
+      height: 30px
     background-color: $grey5
     text-align: center
     font-size: 1.5rem
@@ -49,6 +86,8 @@
     background-image: url(../img/arrow-bottom.svg)
     background-position: center
     background-repeat: no-repeat
+    +media-breakpoint-down(md)
+      order: 3
 
   .lsp-button-plus
     background-image: url(../img/arrow-bottom.svg)
@@ -70,6 +109,8 @@
     margin: 0 16px
     display: flex
     align-items: center
+    +media-breakpoint-down(xs)
+      margin: 0 5px
 
   .lsp-block-cart-item
     margin-bottom: 15px

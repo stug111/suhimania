@@ -31,13 +31,18 @@ jQuery(document).ready(function($) {
         $('.lsp-block-item.jstore-tag').on('click', function(e) {
             $(this).toggleClass('active');
         });
+
+        $('.site-header__mobile-menu a').on('click', function() {
+            $('html, body').scrollTop(0);
+            $('.site-header__mobile-menu').removeClass('active');
+
+
+        });
     }]);
 
     $(".site-header__btn").on('click', function(e) {
         e.preventDefault();
         $('.site-header__mobile-menu').toggleClass('active');
     });
-
-
 
 });

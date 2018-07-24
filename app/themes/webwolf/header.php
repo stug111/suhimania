@@ -130,7 +130,7 @@
         --><span data-id="<%= tag.translitName %>" class="jstore-tag lsp-block-item-tag <%= tag.className %>" title="<%= tag.name %>"></span><!--
     --><% }); %></div><% } %>
                 <img class="jstore-tag" title="<%= name %>"
-                     data-jstore-src="mediumImageUrl">
+                     data-jstore-src="largeImageUrl">
             </div>
         </div>
         <div class="lsp-block-item-category align-item">

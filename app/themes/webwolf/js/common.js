@@ -1,6 +1,7 @@
 jQuery(document).ready(function($) {
 
     window.jStoreEvents = window.jStoreEvents ? window.jStoreEvents : [];
+
     jStoreEvents.push(['ready', null, function(data){
         $(".owl-carousel").owlCarousel({
             autoWidth: true,
@@ -15,9 +16,6 @@ jQuery(document).ready(function($) {
                 }
             }
         });
-        $('#lsp-block-items-list .lsp-block-item').on('click', function(e) {
-            $(this).toggleClass('active');
-        });
 
         // Замена url в меню
         var link = $('#lsp-block-tree .lsp-js-block-tree-item');
@@ -29,9 +27,17 @@ jQuery(document).ready(function($) {
         });
     }]);
 
+    jStoreEvents.push(['pageChanged', null, function(data){
+        $('.lsp-block-item.jstore-tag').on('click', function(e) {
+            $(this).toggleClass('active');
+        });
+    }]);
+
     $(".site-header__btn").on('click', function(e) {
         e.preventDefault();
         $('.site-header__mobile-menu').toggleClass('active');
     });
+
+
 
 });

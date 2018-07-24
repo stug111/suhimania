@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="40px" viewBox="0 0 29 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>maps-and-flags</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="contacts" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hd-desktop-/-contacts" transform="translate(-1056.000000, -448.000000)">
+            <g id="Stacked-Group" transform="translate(315.000000, 80.000000)">
+                <g id="Group-2" transform="translate(0.000000, 55.000000)">
+                    <g id="Stacked-Group">
+                        <g id="map" transform="translate(526.000000, 0.000000)">
+                            <g id="maps-and-flags" transform="translate(215.000000, 313.000000)">
+                                <path d="M14.2804996,0 C6.43044755,0 0.043993152,6.49859375 0.043993152,14.4864063 C0.043993152,24.3995313 12.7842718,38.9525781 13.3267004,39.5672656 C13.8361918,40.1446875 14.7257287,40.1436719 15.2342988,39.5672656 C15.7767274,38.9525781 28.5170061,24.3995313 28.5170061,14.4864063 C28.5168525,6.49859375 22.1304749,0 14.2804996,0 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                                <path d="M14.2804996,21.7749219 C10.3309434,21.7749219 7.11783096,18.5053125 7.11783096,14.4864063 C7.11783096,10.4675 10.3310201,7.19796875 14.2804996,7.19796875 C18.2299791,7.19796875 21.4430915,10.4675781 21.4430915,14.4864844 C21.4430915,18.5053906 18.2299791,21.7749219 14.2804996,21.7749219 Z" id="Path" fill="#D40000"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

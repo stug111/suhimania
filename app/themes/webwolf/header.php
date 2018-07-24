@@ -34,6 +34,10 @@
                 {
                     'type': 'cart#checkout->cartItem',
                     'template': '#checkout-template-cart'
+                },
+                {
+                    'type': 'cart#checkout',
+                    'template': '#checkout-template'
                 }
             ]
         };
@@ -117,7 +121,7 @@
     <!-- Шаблоны -->
     <!-- ссылка на корзину в хедере -->
     <script id='count-header' type='text/template'>
-        <a href="/checkout" class="site-header__checkout">
+        <a href="/checkout/#!/order" class="site-header__checkout">
             <div id="count" class="site-header__count"><%= totalItems %></div>
         </a>
     </script>
@@ -176,6 +180,21 @@
                 </div>
             </div>
             <span class="jstore-tag lsp-button-cross lsp-button-red lsp-js-item-delete">x</span>
+        </div>
+    </script>
+
+    <!-- Корзина -->
+    <script id='checkout-template' type='text/template'>
+        <div class="jstore-tag lsp-block-cart-inner">
+            <div class="jstore-tag ordered-left-block lsp-cart-items-list"></div>
+            <div class="jstore-tag lsp-info-message-bottom">
+                <div class="jstore-tag jstore-cart-total">
+                    <span class="checkout__price-finish"><%= jStoreApp.t('Total')%>:</span> <span class="jstore-tag lsp-block-cart-total"><span class="jstore-js-cart-total-value"><%= totalCost %></span> <%= jStoreApp.getCurrency()%></span><br>
+                </div>
+                <div class="checkout__minimum">
+                    Минимальный заказ: 500 р.
+                </div>
+            </div>
         </div>
     </script>
 

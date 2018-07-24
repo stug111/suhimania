@@ -1,0 +1,128 @@
+.jstore-tag .h1
+  display: none
+
+.lsp-block-items
+  display: flex
+  flex-wrap: wrap
+
+
+#lsp-block-items-list .lsp-block-item
+  position: relative
+  flex: 0 0 calc(25% - 15px)
+  +media-breakpoint-down(lg)
+    flex: 0 0 calc((100% / 3) - 15px)
+  +media-breakpoint-down(md)
+    flex: 0 0 calc(50% - 15px)
+  +media-breakpoint-down(xs)
+    flex: 0 0 calc(100% - 15px)
+  float: none
+  width: 100%
+  height: auto
+  margin: 0 7.5px 30px
+  display: flex
+  flex-direction: column
+  padding: 0
+  border: none
+  background-color: $grey3
+  padding-bottom: 17px
+  border: none
+
+#lsp-block-items-list .lsp-block-item-image-link
+  display: block
+  width: 100%
+  height: auto
+  max-width: 100%
+  > img
+    max-width: 100%
+    max-height: 100%
+    width: 100%
+    height: auto
+
+#lsp-block-items-list .lsp-block-item-name
+  margin: 15px 16px 15px
+  height: auto
+  > span
+    font-size: 1.6rem
+    line-height: 1.5
+    color: $white-text
+    font-weight: 500
+    text-decoration: none
+
+#lsp-block-items-list .lsp-block-item-price
+  position: inherit
+  bottom: auto
+  left: auto
+  margin: 0px 19px 17px
+  > span
+    font-family: PFDinDisplayPro
+    font-size: 2.4rem
+    font-weight: 300
+    color: $white-text
+
+#lsp-block-items-list .lsp-block-item-description
+  margin: 0px 16px 17px
+  font-size: 1.5rem
+  font-family: PFDinDisplayPro
+  font-weight: normal
+  font-style: normal
+  font-stretch: normal
+  line-height: 1.33
+  letter-spacing: normal
+  color: $grey2
+  height: auto
+
+#lsp-block-items-list .lsp-block-item-add-to-cart
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+  right: auto
+  bottom: auto
+  max-width: 200px
+  width: 100%
+  height: 40px
+  border-radius: 20px
+  background-color: $accent
+  margin: 0 auto 20px
+  font-family: PFDinDisplayPro
+  font-size: 1.4rem
+  font-weight: 700
+  font-style: normal
+  font-stretch: normal
+  letter-spacing: 0.5px
+  color: $white-text
+  line-height: 40px
+  padding: 0
+  transition: all 0.25s ease
+  &:hover
+    background-color: $accent-hover
+
+#lsp-block-items-list .lsp-block-item-weight
+  margin: 0px 19px 17px
+  color: $grey2
+  line-height: 1.33
+  font-size: 1.5rem
+
+.block-hidden
+  position: absolute
+  left: -9999px
+  top: 100%
+  opacity: 0
+  z-index: 1
+  transition: opacity 0.5s linear
+
+#lsp-block-items-list .lsp-block-item
+  transition: all 0.5s linear
+  cursor: pointer
+  &.active
+    background-color: $white-text
+    .block-hidden
+      left: 0
+      opacity: 1
+      background-color: $white-text
+    .lsp-block-item-price,
+    .lsp-block-item-name
+      > span
+        color: $text
+
+

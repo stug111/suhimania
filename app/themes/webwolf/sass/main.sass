@@ -1,0 +1,84 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+@import "_template/extand"
+@import "_layout/extand"
+
+::placeholder
+	color: #666
+
+*
+	outline: none !important
+
+html
+	font-size: 10px
+
+body
+	font-size: 1.4rem
+	min-width: 320px
+	position: relative
+	line-height: normal
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	background: $text
+	input, textarea
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+a
+	&:hover
+		text-decoration: none
+
+.site-content
+	display: flex
+	align-items: flex-start
+	margin: 0 auto
+
+.content-area
+	width: 100%
+	padding: 15px 7.5px 0
+	background-color: $text
+
+.rev_slider .tp-caption
+	font-family: $default-font !important
+	text-align: center !important
+
+.entry-title
+	color: $white-text
+	font-size: 2rem
+	font-weight: 700
+	line-height: 1.25
+	text-transform: uppercase
+	text-align: center
+	margin: 15px 0 30px
+
+#map
+	+media-breakpoint-down(md)
+		display: none
+
+.page
+	font-size: 1.5rem
+	color: $grey2
+
+.lsp-block-content
+	width: 100%
+
+.owl-stage
+	display: flex

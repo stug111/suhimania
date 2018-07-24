@@ -1,0 +1,23 @@
+# Application
+app/plugins/*
+app/upgrade
+app/uploads/*
+node_modules
+gulpfile.js
+package.json
+package-lock.json
+.DS_Store
+
+# WordPress
+wp
+.htaccess
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Composer
+vendor/*
+!vendor/.gitkeep
+composer.lock

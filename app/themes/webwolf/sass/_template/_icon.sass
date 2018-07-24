@@ -1,0 +1,65 @@
+.vk,
+.facebook,
+.ok,
+.insta,
+.apple,
+.android
+  display: block
+  background-color: $text
+  background-position: center
+  transition: background-color 0.25s ease
+  &:hover
+    background-color: $accent
+
+.vk
+  width: 19px
+  height: 10px
+  mask-image: url(../img/vk.svg)
+
+.facebook
+  width: 9px
+  height: 15px
+  mask-image: url(../img/fb.svg)
+
+.ok
+  width: 11px
+  height: 16px
+  mask-image: url(../img/ok.svg)
+
+.insta
+  width: 16px
+  height: 16px
+  mask-image: url(../img/instagram.svg)
+
+.apple,
+.android
+  width: 34px
+  height: 34px
+
+.apple
+  mask-image: url(../img/itunes.svg)
+
+.android
+  mask-image: url(../img/google-play.svg)
+
+.app-store,
+.google-play
+  display: block
+  width: 192px
+  height: 58px
+  margin-left: 119px
+  transition: background-color 0.25s ease
+  +media-breakpoint-down(md)
+    margin-left: 30px
+
+.app-store
+  background: url(../img/app-store.svg) no-repeat center center / cover
+  margin-bottom: 10px
+  &:hover
+    background: url(../img/app-store-hover.svg) no-repeat center center / cover
+
+
+.google-play
+  background: url(../img/google-play.png) no-repeat center center / cover
+  &:hover
+    background: url(../img/google-play-hover.png) no-repeat center center / cover

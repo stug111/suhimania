@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="192px" height="58px" viewBox="0 0 192 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50 (54983) - http://www.bohemiancoding.com/sketch -->
+    <title>146DBA67-087D-437B-822D-E89EB0FABE44</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons-/-large-/-app-/-app-store">
+            <g id="Apple-Store-Dark">
+                <rect id="button" stroke="#FFFFFF" stroke-width="0.9" fill-opacity="0.3" fill="#131417" x="0.45" y="0.45" width="190.8" height="56.7" rx="9"></rect>
+                <text id="Скачать" font-family="SFUIDisplay-Regular, SF UI Display" font-size="13.5" font-weight="normal" letter-spacing="1.08000004" fill="#FFFFFF">
+                    <tspan x="61.2" y="20.2">Скачать</tspan>
+                </text>
+                <text id="App-Store" font-family="SFUIDisplay-Medium, SF UI Display" font-size="26.1" font-weight="400" fill="#FFFFFF">
+                    <tspan x="61.2" y="45.7">App Store</tspan>
+                </text>
+                <path d="M43.3433,42.9341314 C41.76402,45.2333829 40.1304,47.5184914 37.55115,47.5663886 C35.01275,47.6142857 34.19898,46.0695086 31.30243,46.0695086 C28.40284,46.0695086 27.49578,47.5184914 25.099101,47.6142857 C22.609094,47.7070629 20.715725,45.1309886 19.12343,42.8421086 C15.870421,38.1621429 13.387596,29.6094857 16.726732,23.8376537 C18.380264,20.971236 21.3432,19.1576314 24.553991,19.1097531 C26.99931,19.0649486 29.30933,20.75106 30.80292,20.75106 C32.29879,20.75106 35.10262,18.7266891 38.05028,19.0236137 C39.28414,19.0743583 42.74708,19.5185949 44.97103,22.7584406 C44.79528,22.8734503 40.83758,25.1658 40.88584,29.94156 C40.93429,35.6464114 45.90716,37.5426857 45.96492,37.56852 C45.91989,37.7025943 45.16996,40.2756514 43.3433,42.9341314 Z M32.51387,12.7567251 C33.87902,11.1641074 36.18562,9.97952057 38.08923,9.89992457 C38.33243,12.1121503 37.43848,14.3274309 36.11817,15.9237257 C34.7952,17.5171543 32.62958,18.7584069 30.50424,18.5926714 C30.21544,16.428324 31.28666,14.1710863 32.51387,12.7567251 Z" id="logo" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

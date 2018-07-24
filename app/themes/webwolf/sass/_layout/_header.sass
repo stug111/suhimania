@@ -1,0 +1,221 @@
+.home .site-header,
+.home .site-header__ancore
+  display: none
+  +media-breakpoint-down(sm)
+    display: flex
+
+.site-header
+  background: $accent
+  padding: 10px 15px
+  +media-breakpoint-down(lg)
+    padding: 10px 40px
+  z-index: 10
+  top: 0
+  position: fixed
+  width: 100%
+  display: flex
+  justify-content: space-between
+
+  &__ancore
+    height: 53px
+
+  .jstore-tag.lsp-block-menu-tree
+    margin: 0
+
+  li.jstore-tag
+    margin: 0
+    display: inline-block
+    position: relative
+
+    .lsp-js-menu-childs
+      display: flex
+      flex-direction: column
+      position: absolute
+      left: -9999px
+      top: 100%
+      opacity: 0
+      margin: 0
+      padding: 0 10px
+      background: $accent
+      word-wrap: normal
+      transition: opacity 0.25s linear
+      z-index: 10
+      li
+        margin-bottom: 5px
+    //
+    //&:hover
+    //  .lsp-js-menu-childs
+    //    left: 0
+    //    opacity: 1
+
+    a
+      display: inline-block
+      padding: 9px 13px
+      font-size: 1.4rem
+      font-weight: bold
+      line-height: 1.14
+      letter-spacing: 0.5px
+      color: $white-text
+      border-radius: 18.8px
+      text-transform: uppercase
+      transition: all 0.25s ease
+      white-space: nowrap
+
+
+    a.selected,
+    a:hover
+      color: $white-text
+      background: $accent-hover
+
+  &__menu
+    //display: flex
+    //justify-content: space-between
+
+    &:last-child
+      margin-right: 15px
+  &__checkout
+    display: block
+    padding-right: 40px
+    background: url(../img/checkout.svg) no-repeat top 5px right
+    &:hover
+      .site-header__count
+        border: 2px solid $white-text
+
+  &__wrapper
+    width: 86%
+    +media-breakpoint-down(lg)
+      width: 70%
+    +media-breakpoint-down(sm)
+      display: none
+
+  &__count
+    font-family: PFDinDisplayPro
+    font-size: 1.4rem
+    font-weight: 500
+    line-height: 1.14
+    text-align: center
+    color: $white-text
+    border-radius: 50%
+    width: 30px
+    height: 30px
+    background-color: #b90404
+    border: 2px solid transparent
+    line-height: 30px
+    text-align: center
+    transition: border 0.25s ease
+
+  &__btn
+    display: none
+    +media-breakpoint-down(sm)
+      display: block
+      font-size: 1.4rem
+      font-weight: 700
+      letter-spacing: 0.5px
+      color: $white-text
+      text-transform: uppercase
+      height: 30px
+      width: 77px
+      background-color: $accent-hover
+      border-radius: 18.8px
+      text-align: center
+      line-height: 30px
+      border: 2px solid transparent
+      &:hover
+        color: $white-text
+        border: 2px solid $white-text
+
+  &__mobile-menu
+    display: block
+    position: absolute
+    left: -99999px
+    opacity: 0
+    transition: opacity 0.5s ease
+    +media-breakpoint-down(sm)
+      &.active
+        opacity: 1
+        top: 50px
+        left: 0
+        background: $text
+        width: 100%
+        height: calc(100vh - 50px)
+        overflow-y: auto
+
+    .lsp-block-menu-tree
+      display: flex
+      flex-direction: column
+      align-items: center
+      padding: 0
+      margin: 0
+
+    li.jstore-tag
+      width: 100%
+      text-align: center
+      background-color: $grey3
+      margin-bottom: 1px
+      padding: 12px 0
+      &:first-child
+        margin-top: 9px
+      &:last-child
+        margin-bottom: 15px
+
+    .menu
+      display: flex
+      flex-direction: column
+      align-items: center
+
+      li
+        width: 100%
+        padding: 12px 0
+        text-align: center
+        background-color: $grey3
+        margin-bottom: 1px
+        &:last-child
+          margin-bottom: 15px
+
+      a
+        color: $white
+        font-size: 1.4rem
+        padding: 9px 13px !important
+
+    .site-sidebar__day
+      background-color: $grey3
+      padding: 15px 0
+      margin-bottom: 15px
+
+    .site-sidebar__time-work
+      color: $white-text
+      text-align: center
+
+    .site-header__contact
+      background-color: $grey3
+      text-align: center
+      padding: 15px 0
+      margin-bottom: 15px
+
+    .site-sidebar__phone
+      color: $white-text
+
+    .site-header__application
+      background-color: $grey3
+      padding: 15px 0
+      margin-bottom: 15px
+
+      .apple,
+      .android
+        background-color: $white-text
+
+    .site-header__social
+      background-color: $grey3
+      padding: 22px 0
+
+      .vk,
+      .facebook,
+      .ok,
+      .insta
+        background-color: $white-text
+
+
+
+
+
+

@@ -1,0 +1,43 @@
+.form
+  &__title
+    font-size: 1.5rem
+    font-weight: 500
+    line-height: 1.33
+    color: $white-text
+    text-transform: uppercase
+    margin-bottom: 10px
+
+  &__field
+    margin-bottom: 15px
+
+    .site-button
+      max-width: 290px
+      margin: 53px auto 42px
+
+textarea,
+input
+  transition: background-color 0.25s
+  border: 1px solid transparent
+  width: 100%
+  background-color: $grey3
+  font-size: 1.5rem
+  color: rgba($white-text,0.3)
+
+  &[aria-invalid="true"]
+    border: 1px solid $accent
+
+input
+  height: 40px
+  padding-left: 15px
+
+textarea
+  padding: 9px 15px
+
+input:active,
+input:focus,
+textarea:active,
+textarea:focus
+  background-color: $grey4
+
+.wpcf7-response-output
+  color: $white-text

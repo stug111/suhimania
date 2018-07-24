@@ -1,0 +1,119 @@
+.stock
+  &__application
+    min-height: 360px
+    max-height: 360px
+    background: url(../img/iphone.png) no-repeat bottom right 10%, url(../img/stock/vector.svg) no-repeat center right 30%, url(../img/stock/vector-leaves-1.svg) no-repeat top 57px right 55%, url(../img/stock/vector-leaves-2.svg) no-repeat top 201px right 50%, url(../img/stock/vector-leaves-3.svg) no-repeat top 276px right 55%, url(../img/carf_bg.png) center center / 100% 100%
+    margin-bottom: 15px
+    +media-breakpoint-down(md)
+      background: url(../img/iphone.png) no-repeat bottom right 10%, url(../img/carf_bg.png) center center / 100% 100%
+
+
+
+  &__app-title
+    font-size: 2.8rem
+    color: $white-text
+    padding-top: 57px
+    padding-left: 81px
+    margin-bottom: 30px
+    +media-breakpoint-down(md)
+      font-size: 2.4rem
+      padding-left: 30px
+
+  &__block
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    min-height: 360px
+    max-height: 360px
+    margin-bottom: 15px
+    position: relative
+
+  &__title
+    font-size: 2.8rem
+    font-weight: 700
+    text-align: center
+    color: $white-text
+    text-transform: uppercase
+    position: relative
+    max-width: 275px
+
+    &.before
+      &::before
+        content: ''
+        display: block
+        position: absolute
+        left: -100px
+        top: -50px
+        width: 99px
+        height: 86px
+        background: url(../img/leaves-3.svg) no-repeat center center
+
+    &.after
+      &::after
+        content: ''
+        display: block
+        position: absolute
+        right: -120px
+        top: -40px
+        width: 92px
+        height: 79px
+        transform: scaleY(-1) rotate(30deg)
+        background: url(../img/leaves-2.svg) no-repeat center center
+
+    +media-breakpoint-down(md)
+      &.after,
+      &.before
+        &::before,
+        &::after
+          display: none
+
+  &__sub-title
+    font-size: 1.5rem
+    text-align: center
+    color: rgba($white-text, 0.7)
+    line-height: 1.33
+    font-weight: 400
+    position: relative
+    max-width: 450px
+    > span
+      color: $accent
+
+    &.before
+      &::before
+        content: ''
+        display: block
+        position: absolute
+        right: -86px
+        bottom: -20px
+        width: 92px
+        height: 79px
+        background: url(../img/leaves-2.svg) no-repeat center center
+
+    &.after
+      &::after
+        content: ''
+        display: block
+        position: absolute
+        left: -80px
+        top: -30px
+        width: 99px
+        height: 86px
+        background: url(../img/leaves-3.svg) no-repeat center center
+        transform: scaleY(-1)
+
+    +media-breakpoint-down(md)
+      &.after,
+      &.before
+        &::before,
+        &::after
+          display: none
+
+  &__bottom
+    position: absolute
+    bottom: 30px
+    left: 20px
+    font-size: 1.2rem
+    color: rgba($white-text, 0.7)
+    > span
+      color: $accent

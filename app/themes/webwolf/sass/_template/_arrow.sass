@@ -1,0 +1,26 @@
+.arrow-header-left,
+.arrow-header-right
+  display: block
+  width: 30px
+  height: 30px
+  background-color: $accent
+  transition: background-color 0.25s ease
+  border-radius: 50%
+  position: absolute
+  top: calc(50% - 17px)
+  &:hover
+    background-color: $accent-hover
+  +media-breakpoint-down(sm)
+    display: none
+
+.arrow-header-right
+  background: url(../img/arrow.svg) no-repeat center center
+  right: -40px
+
+.arrow-header-left
+  background: url(../img/arrow.svg) no-repeat center center
+  transform: rotate(180deg)
+  left: -30px
+
+.owl-nav
+  height: 0

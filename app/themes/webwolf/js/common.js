@@ -11,7 +11,7 @@ jQuery(document).ready(function($) {
                 0: {
                     nav: true
                 },
-                1316: {
+                1200: {
                     nav: false
                 }
             }

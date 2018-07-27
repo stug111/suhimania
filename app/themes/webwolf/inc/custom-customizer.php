@@ -138,4 +138,17 @@ add_action('customize_register', function($customizer) {
         )
     );
 
+    $customizer->add_setting(
+        'popup_slider', array('default' => '')
+    );
+    $customizer->add_control(
+        'popup_slider',
+        array(
+            'label' => 'ID блока для всплывающего окна',
+            'section' => 'settings-site',
+            'type' => 'text',
+            'description' => ''
+        )
+    );
+
 });

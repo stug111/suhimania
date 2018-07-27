@@ -1,1 +1,138 @@
 .checkout-form
+  .lsp-js-form-field-email,
+  .lsp-js-form-field-delivery_city,
+  .lsp-js-form-field-housing,
+  .lsp-js-form-field-apartment,
+  .lsp-js-form-field-entrance,
+  .lsp-js-form-field-floor,
+  .lsp-js-form-field-doorphone,
+  .lsp-js-form-field-delivery_date
+    display: none
+
+  .lsp-form
+    display: flex
+    flex-wrap: wrap
+
+  .lsp-js-form-field-delivery_type
+    order: 1
+    width: 100%
+    .label-row-text
+      width: 100%
+      display: block
+      font-size: 1.6rem
+      font-weight: 500
+      color: $white-text
+      text-transform: uppercase
+      margin-bottom: 15px
+
+    .label-row-field
+      display: flex
+      .jstore-tag:first-child
+        width: 190px
+
+    label.jstore-tag
+      font-size: 1.6rem
+      line-height: 1.25
+      color: $white-text
+      padding-left: 28px
+      position: relative
+      margin-bottom: 15px
+
+  .lsp-js-delivery-type-cont-delivery
+    order: 2
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+
+  .lsp-js-form-field-delivery_street
+    width: calc(50% - calc(15px / 2))
+    margin-right: calc(15px / 2)
+
+  .lsp-js-form-field-home
+    width: calc(50% - calc(15px / 2))
+    margin-left: calc(15px / 2)
+
+  .lsp-js-form-field-name
+    order: 3
+    width: calc(50% - calc(15px / 2))
+    margin-right: calc(15px / 2)
+
+  .lsp-js-form-field-phone
+    order: 4
+    width: calc(50% - calc(15px / 2))
+    margin-left: calc(15px / 2)
+
+  .lsp-js-form-field-message
+    order: 5
+    width: 100%
+
+  .lsp-js-form-field-person_count
+    order: 6
+
+  .lsp-js-form-field-payment_type
+    order: 7
+    width: 100%
+    .label-row-text
+      width: 100%
+      display: block
+      font-size: 1.6rem
+      font-weight: 500
+      color: $white-text
+      text-transform: uppercase
+      margin-bottom: 15px
+    .label-row-field
+      display: flex
+
+  .lsp-js-form-field-userAgreement
+    order: 8
+
+  .lsp-js-form-field-userAgreement + .jstore-tag.label-row
+    order: 9
+    .lsp-button
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 200px
+      height: 40px
+      background-color: $accent
+      font-size: 14px !important
+      letter-spacing: 0.5px
+      font-weight: 700
+      color: $white-text
+      transition: all 0.25s ease
+      border-radius: 25px
+      text-transform: uppercase
+      cursor: pointer
+      padding-top: 5px
+      &:hover
+        background-color: $accent-hover
+        color: $white-text
+
+  .label-row
+    margin-bottom: 15px
+
+  .lsp-order-paymenttype-variant-CASH
+    width: 190px
+
+  .lsp-order-paymenttype-variant-CASH,
+  .lsp-order-paymenttype-variant-CARD
+    label.jstore-tag
+      font-size: 1.6rem
+      line-height: 1.25
+      color: $white-text
+      padding-left: 28px
+      position: relative
+
+  .lsp-js-form-field-payment_type_CASH_sum
+    span.jstore-tag
+      font-size: 1.4rem
+      line-height: normal
+      color: $grey2
+      padding-left: 0
+      position: relative
+      text-transform: inherit
+
+  .lsp-form-error-mess
+    font-size: 1.5rem
+    color: $accent
+    margin-top: 5px

@@ -28,21 +28,48 @@ jQuery(document).ready(function($) {
     }]);
 
     jStoreEvents.push(['pageChanged', null, function(data){
-        $('.lsp-block-item.jstore-tag').on('click', function(e) {
-            $(this).toggleClass('active');
-        });
 
-        $('.site-header__mobile-menu li a').on('click', function() {
-            $('html, body').scrollTop(0);
-            $('.site-header__mobile-menu').removeClass('active');
+        $('input[type="radio"]').parent().addClass('before');
 
+        checkedButton();
 
-        });
+        $('input[type="radio"]').on('click', function() {
+            checkedButton();
+        })
+
     }]);
 
     $(".site-header__btn").on('click', function(e) {
         e.preventDefault();
         $('.site-header__mobile-menu').toggleClass('active');
     });
+
+    function checkedButton () {
+        var radio = $('input[type="radio"]');
+
+        $.each(radio, function(index, el) {
+           if( $(el).prop('checked') == true ) {
+               $(this).parent().addClass('after');
+           } else {
+               $(this).parent().removeClass('after');
+           }
+
+        });
+    }
+
+    $('*[data-modal="modal"]').on('click', function(e) {
+        e.preventDefault();
+
+        var id = $(this).attr('href');
+
+        $(id).fadeToggle('700', 'linear')
+            .css('display', 'flex');
+
+    });
+
+    $('.modal__placeholder, .modal__close').on('click', function() {
+       $('.modal').fadeOut('700', 'linear');
+    });
+
 
 });

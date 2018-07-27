@@ -1,0 +1,26 @@
+input[type="radio"]
+  display: none
+
+
+.before::before
+  content: ''
+  display: block
+  position: absolute
+  width: 16px
+  height: 16px
+  background-color: $white-text
+  left: 0
+  top: 0
+  border-radius: 50%
+
+
+.after::after
+  content: ''
+  display: block
+  position: absolute
+  width: 8px
+  height: 8px
+  background-color: $accent
+  border-radius: 50%
+  left: 4px
+  top: 4px

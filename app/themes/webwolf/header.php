@@ -198,6 +198,22 @@
         </div>
     </script>
 
+    <div id="silder" class="modal">
+        <div class="modal__placeholder"></div>
+        <div class="modal__content">
+            <div class="modal__close"></div>
+            <h2 class="modal__title">Начисление и списание баллов</h2>
+            <p class="modal__text">
+                С каждым заказом Вам начисляется <b>5% от заказа</b> (кроме акционных товаров, напитков и десертов). Вы копите баллы, и уже со следующего заказа можете оплатить до 50% баллами.  Неиспользованные баллы сгорают <b>в течение 90 дней</b>.
+            </p>
+            <span class="modal__point-rub">1 балл = 1 рубль.</span>
+            <p class="modal__text">
+                Баллы привязываются к вашему номеру сотового телефона. Посмотреть начисленные баллы вы можете в личном кабинете на сайте
+                <a href="www.platius.ru">www.platius.ru</a> или в <a href="#">мобильном приложении.</a>
+            </p>
+        </div>
+    </div>
+
 
 
 	<div id="content" class="site-content">

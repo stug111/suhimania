@@ -1,7 +1,7 @@
 # Application
 app/plugins/*
 app/upgrade
-#app/uploads/*
+app/uploads/*
 node_modules
 gulpfile.js
 package.json

@@ -1,2 +1,14 @@
 input[type="checkbox"]
   display: none
+
+.after-checkbox::after
+  content: ''
+  display: block
+  position: absolute
+  top: 4.5px
+  left: 3.5px
+  width: 9px
+  height: 5px
+  border-bottom: 2px solid $accent
+  border-left: 2px solid $accent
+  transform: rotate(-45deg)

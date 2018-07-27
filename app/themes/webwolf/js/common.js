@@ -30,11 +30,14 @@ jQuery(document).ready(function($) {
     jStoreEvents.push(['pageChanged', null, function(data){
 
         $('input[type="radio"]').parent().addClass('before');
+        $('input[type="checkbox"]').parent().addClass('before');
 
         checkedButton();
+        checkedCheckbox();
 
-        $('input[type="radio"]').on('click', function() {
+        $('input[type="radio"], input[type="checkbox"]').on('click', function() {
             checkedButton();
+            checkedCheckbox();
         })
 
     }]);
@@ -53,6 +56,19 @@ jQuery(document).ready(function($) {
            } else {
                $(this).parent().removeClass('after');
            }
+
+        });
+    }
+
+    function checkedCheckbox () {
+        var checkbox = $('input[type="checkbox"]');
+
+        $.each(checkbox, function(index, el) {
+            if( $(el).prop('checked') == true ) {
+                $(this).parent().addClass('after-checkbox');
+            } else {
+                $(this).parent().removeClass('after-checkbox');
+            }
 
         });
     }
@@ -81,9 +97,6 @@ jQuery(document).ready(function($) {
     function parallaxScroll(){
         var scrolled = $(window).scrollTop();
         $('.parallax').css('top',(0-(scrolled*.25))+'px');
-        // $('#parallax-lvl-1').css('top',(0-(scrolled*.5))+'px');
-        // $('#parallax-lvl-2').css('top',(0-(scrolled*.75))+'px');
-        // $('#parallax-lvl-3').css('top',(0-(scrolled*.9))+'px');
     }
 
 

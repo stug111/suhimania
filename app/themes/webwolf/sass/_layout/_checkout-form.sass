@@ -159,33 +159,12 @@
     .label-row-field
       position: relative
       padding-left: 28px
-      .jstore-tag
-        &::before
-          content: ''
-          display: block
-          position: absolute
-          top: 0
-          left: 0
-          width: 16px
-          height: 16px
-          background-color: $white-text
-          border-radius: 50%
+      font-size: 1.6rem
+      line-height: 1.25
+      color: $white-text
 
       a
         color: $accent
         &:hover
           border-bottom: 1px dashed $accent
 
-      input[type="checkbox"]
-        &:checked + a
-          &::after
-            content: ''
-            display: block
-            position: absolute
-            top: 4.5px
-            left: 3.5px
-            width: 9px
-            height: 5px
-            border-bottom: 2px solid $accent
-            border-left: 2px solid $accent
-            transform: rotate(-45deg)

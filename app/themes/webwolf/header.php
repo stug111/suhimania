@@ -53,6 +53,11 @@
     <div class="site-header__ancore"></div>
 	<header id="masthead" class="site-header">
         <a href="#" class="site-header__btn">Меню</a>
+        <div class="site-header__mobile-logo">
+            <a href="/">
+                <img src="/app/uploads/2018/07/small.png" alt="">
+            </a>
+        </div>
         <div class="site-header__mobile-menu">
             <div id="lsp-block-tree" class="lsp-block-menu-tree"></div>
             <nav id="site-navigation" class="site-sidebar__menu">

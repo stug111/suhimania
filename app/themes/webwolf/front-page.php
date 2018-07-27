@@ -19,6 +19,19 @@ get_sidebar();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
+            <div class="parallax">
+                <img class="image_1" src="/app/uploads/2018/07/ai-image-3-copy.png" alt="">
+                <img class="image_2" src="/app/uploads/2018/07/ai-image.png" alt="">
+                <img class="image_3" src="/app/uploads/2018/07/ai-image-6.png" alt="">
+                <img class="image_4" src="/app/uploads/2018/07/ai-image-2-copy.png" alt="">
+                <img class="image_5" src="/app/uploads/2018/07/ai-image-3.png" alt="">
+                <img class="image_6" src="/app/uploads/2018/07/ai-image-5.png" alt="">
+                <img class="image_7" src="/app/uploads/2018/07/ai-image-6-copy.png" alt="">
+                <img class="image_8" src="/app/uploads/2018/07/ai-image-2-copy-2.png" alt="">
+                <img class="image_9" src="/app/uploads/2018/07/ai-image-3-copy-2.png" alt="">
+                <img class="image_10" src="/app/uploads/2018/07/ai-image-5.png" alt="">
+            </div>
+
 
             <?php
             if ( have_posts() ) :

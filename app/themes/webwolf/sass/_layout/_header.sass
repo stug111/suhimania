@@ -50,11 +50,6 @@
       z-index: 10
       li
         margin-bottom: 5px
-    //
-    //&:hover
-    //  .lsp-js-menu-childs
-    //    left: 0
-    //    opacity: 1
 
     a
       display: inline-block
@@ -68,16 +63,14 @@
       text-transform: uppercase
       transition: all 0.25s ease
       white-space: nowrap
+      +media-breakpoint-down(sm)
+        border-radius: 0
 
 
     a.selected,
     a:hover
       color: $white-text
       background: $accent-hover
-
-  &__menu
-    //display: flex
-    //justify-content: space-between
 
     &:last-child
       margin-right: 15px

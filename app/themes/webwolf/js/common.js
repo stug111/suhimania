@@ -38,7 +38,13 @@ jQuery(document).ready(function($) {
         $('input[type="radio"], input[type="checkbox"]').on('click', function() {
             checkedButton();
             checkedCheckbox();
-        })
+        });
+
+        $('.site-header__mobile-menu li a').on('click', function() {
+            $('html, body').scrollTop(0);
+            $('.site-header__mobile-menu').removeClass('active');
+
+        });
 
     }]);
 
@@ -47,6 +53,9 @@ jQuery(document).ready(function($) {
         $('.site-header__mobile-menu').toggleClass('active');
     });
 
+    /*
+    Переключение чекбоксов и радио кнопок
+     */
     function checkedButton () {
         var radio = $('input[type="radio"]');
 
@@ -73,6 +82,9 @@ jQuery(document).ready(function($) {
         });
     }
 
+    /*
+        Модалки
+     */
     $('*[data-modal="modal"]').on('click', function(e) {
         e.preventDefault();
 
@@ -88,7 +100,9 @@ jQuery(document).ready(function($) {
     });
 
 
-    // Паралакс
+    /*
+        Паралакс
+     */
 
     $(window).bind('scroll',function(e){
         parallaxScroll();

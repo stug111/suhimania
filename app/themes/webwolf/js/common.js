@@ -46,7 +46,26 @@ jQuery(document).ready(function($) {
 
         });
 
+        $('.lsp-js-submit').on('click', function() {
+
+            setTimeout(function() {
+
+                $('input[type="radio"]').parent().addClass('before');
+                $('input[type="checkbox"]').parent().addClass('before');
+
+                checkedButton();
+                checkedCheckbox();
+
+                $('input[type="radio"], input[type="checkbox"]').on('click', function() {
+                    checkedButton();
+                    checkedCheckbox();
+                });
+            }, 1500);
+        });
+
     }]);
+
+
 
     $(".site-header__btn").on('click', function(e) {
         e.preventDefault();

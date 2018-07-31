@@ -151,6 +151,15 @@ function webwolf24_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'webwolf24_scripts' );
 
+/*
+ * Удаление поля САЙТ в комментариях
+ */
+function remove_comment_fields($fields) {
+    unset($fields['url']);
+    return $fields;
+}
+add_filter('comment_form_default_fields', 'remove_comment_fields');
+
 
 // Частичное форматирование
 function my_formatter($content) {

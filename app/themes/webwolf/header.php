@@ -153,6 +153,9 @@
           data-jstore-value="cost"></span> <span class="jstore-tag lsp-block-item-measurement"><%= jStoreApp.getCurrency()%></span>
         </div>
         <div class="block-hidden">
+            <div class="jstore-tag lsp-js-typeModifiers-block">
+                <div class="jstore-tag lsp-modifier-group lsp-js-types-container"></div>
+            </div>
             <div class="jstore-tag lsp-block-item-description"
                  data-jstore-value="description"></div>
             <div class="lsp-block-item-weight">

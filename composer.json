@@ -47,8 +47,7 @@
     "wpackagist-plugin/shortcodes-ultimate": "*",
     "wpackagist-plugin/tablepress": "*",
     "wpackagist-plugin/wordpress-seo": "*",
-    "jetpack": "*"
-
+    "wpackagist-plugin/jetpack": "*"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2"

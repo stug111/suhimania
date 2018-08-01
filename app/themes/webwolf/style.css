@@ -855,7 +855,3 @@ object {
 .gallery-caption {
 	display: block;
 }
-
-#respond .comment-form-fields div.comment-form-field {
-	display: none;
-}

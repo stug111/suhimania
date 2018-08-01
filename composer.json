@@ -39,13 +39,10 @@
     "johnpbloch/wordpress": "4.9.6",
     "oscarotero/env": "^1.1.0",
     "roots/wp-password-bcrypt": "1.0.0",
-    "wpackagist-plugin/cf7-phone-mask-field": "*",
     "wpackagist-plugin/contact-form-7": "*",
     "wpackagist-plugin/cyr3lat": "*",
     "wpackagist-plugin/redirection": "*",
     "wpackagist-plugin/reusable-text-blocks": "*",
-    "wpackagist-plugin/shortcodes-ultimate": "*",
-    "wpackagist-plugin/tablepress": "*",
     "wpackagist-plugin/wordpress-seo": "*",
     "wpackagist-plugin/jetpack": "*"
   },

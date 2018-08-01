@@ -132,5 +132,10 @@ jQuery(document).ready(function($) {
         $('.parallax').css('top',(0-(scrolled*.25))+'px');
     }
 
+    /*
+     * Скрываем поле Сайт
+     */
+
+    $('.comment-form-url').css('display', 'none');
 
 });

@@ -151,4 +151,17 @@ add_action('customize_register', function($customizer) {
         )
     );
 
+    $customizer->add_setting(
+        'job', array('default' => '')
+    );
+    $customizer->add_control(
+        'job',
+        array(
+            'label' => 'ID блока для заполнения формы по вакансии',
+            'section' => 'settings-site',
+            'type' => 'text',
+            'description' => ''
+        )
+    );
+
 });

@@ -61,3 +61,52 @@
     font-weight: 300
     color: $grey5
     margin-bottom: 15px
+
+  &__job
+    .modal__content
+      overflow-y: auto
+      background-color: $grey5
+      max-height: 100vh
+    .site-button
+      margin: 20px auto
+
+    .form__field
+      span
+        display: block
+        margin: 0
+
+    .modal__close
+      background: $white-text no-repeat center center
+
+    .wpcf7-radio
+      label
+        padding-left: 25px
+        position: relative
+        margin: 10px 0
+
+      input[type="radio"]
+        & + span
+          &:before
+              content: ''
+              display: block
+              position: absolute
+              width: 16px
+              height: 16px
+              background-color: $white-text
+              left: 0
+              top: 0
+              border-radius: 50%
+
+        &:checked + span
+          &::after
+              content: ''
+              display: block
+              position: absolute
+              width: 8px
+              height: 8px
+              background-color: $accent
+              border-radius: 50%
+              left: 4px
+              top: 4px
+
+            

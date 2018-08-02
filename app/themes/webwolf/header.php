@@ -214,6 +214,14 @@
         </div>
     </div>
 
+    <div id="<?= get_theme_mod('job') ?>" class="modal modal__job">
+        <div class="modal__placeholder"></div>
+        <div class="modal__content">
+            <div class="modal__close"></div>
+            <?= do_shortcode('[contact-form-7 id="'. get_theme_mod('job') .'"]'); ?>
+        </div>
+    </div>
+
 
 
 	<div id="content" class="site-content">

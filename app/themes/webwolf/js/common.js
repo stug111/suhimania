@@ -73,7 +73,7 @@ jQuery(document).ready(function($) {
     });
 
     /*
-    Переключение чекбоксов и радио кнопок
+     * Переключение чекбоксов и радио кнопок
      */
     function checkedButton () {
         var radio = $('input[type="radio"]');
@@ -102,7 +102,7 @@ jQuery(document).ready(function($) {
     }
 
     /*
-        Модалки
+     * Модалки
      */
     $('*[data-modal="modal"]').on('click', function(e) {
         e.preventDefault();

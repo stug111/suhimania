@@ -64,6 +64,38 @@ h2.h1
     font-weight: 500
     text-decoration: none
 
+#lsp-block-items-list .lsp-js-typeModifiers-block
+  margin: 0px 32px 15px
+
+.lsp-type-modifer-group-title
+  display: none
+
+.lsp-js-modifier-set
+  display: block
+  position: relative
+  margin-bottom: 5px
+  &::before
+    content: ''
+    display: block
+    position: absolute
+    width: 16px
+    height: 16px
+    background-color: $text
+    left: -20px
+    top: -2px
+    border-radius: 50%
+  &.lsp-button-red
+    &::after
+      content: ''
+      display: block
+      position: absolute
+      width: 8px
+      height: 8px
+      background-color: $accent
+      border-radius: 50%
+      left: -16px
+      top: 2px
+
 #lsp-block-items-list .lsp-block-item-price
   position: inherit
   bottom: auto

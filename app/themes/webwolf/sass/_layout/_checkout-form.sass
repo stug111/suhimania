@@ -1,10 +1,10 @@
 .checkout-form
   .lsp-js-form-field-email,
   .lsp-js-form-field-delivery_city,
-  .lsp-js-form-field-housing,
-  .lsp-js-form-field-apartment,
-  .lsp-js-form-field-entrance,
-  .lsp-js-form-field-floor,
+  //.lsp-js-form-field-housing,
+  //.lsp-js-form-field-apartment,
+  //.lsp-js-form-field-entrance,
+  //.lsp-js-form-field-floor,
   .lsp-js-form-field-doorphone,
   .lsp-js-form-field-delivery_date
     display: none
@@ -42,19 +42,23 @@
         width: 100%
 
   .lsp-js-delivery-type-cont-delivery
-    order: 2
+    order: 4
     width: 100%
     display: flex
     flex-wrap: wrap
 
-  .lsp-js-form-field-delivery_street
+  .lsp-js-form-field-delivery_street,
+  .lsp-js-form-field-housing,
+  .lsp-js-form-field-entrance
     width: calc(50% - calc(15px / 2))
     margin-right: calc(15px / 2)
     +media-breakpoint-down(xs)
       width: 100%
       margin-right: 0
 
-  .lsp-js-form-field-home
+  .lsp-js-form-field-home,
+  .lsp-js-form-field-apartment,
+  .lsp-js-form-field-floor
     width: calc(50% - calc(15px / 2))
     margin-left: calc(15px / 2)
     +media-breakpoint-down(xs)
@@ -62,7 +66,7 @@
       margin-left: 0
 
   .lsp-js-form-field-name
-    order: 3
+    order: 2
     width: calc(50% - calc(15px / 2))
     margin-right: calc(15px / 2)
     +media-breakpoint-down(xs)
@@ -70,7 +74,7 @@
       margin-right: 0
 
   .lsp-js-form-field-phone
-    order: 4
+    order: 3
     width: calc(50% - calc(15px / 2))
     margin-left: calc(15px / 2)
     +media-breakpoint-down(xs)
@@ -78,11 +82,11 @@
       margin-left: 0
 
   .lsp-js-form-field-message
-    order: 5
+    order: 6
     width: 100%
 
   .lsp-js-form-field-person_count
-    order: 6
+    order: 5
 
   .lsp-js-form-field-payment_type
     order: 7

@@ -25,9 +25,14 @@ jQuery(document).ready(function($) {
 
             $(el).attr('href', '/main/#' + href[1]);
         });
+
     }]);
 
     jStoreEvents.push(['pageChanged', null, function(data){
+
+        if($('*').is('.lsp-block-success-order')) {
+            $('.jstore-cart-total, .checkout__minimum').hide();
+        }
 
         $('input[type="radio"]').parent().addClass('before');
         $('input[type="checkbox"]').parent().addClass('before');
@@ -120,7 +125,7 @@ jQuery(document).ready(function($) {
 
 
     /*
-        Паралакс
+     *  Паралакс
      */
 
     $(window).bind('scroll',function(e){

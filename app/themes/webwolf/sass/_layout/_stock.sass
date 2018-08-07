@@ -38,7 +38,7 @@
     position: relative
     max-width: 275px
 
-    &.before
+    &.before-list
       &::before
         content: ''
         display: block
@@ -49,7 +49,7 @@
         height: 86px
         background: url(../img/leaves-3.svg) no-repeat center center
 
-    &.after
+    &.after-list
       &::after
         content: ''
         display: block
@@ -62,8 +62,8 @@
         background: url(../img/leaves-2.svg) no-repeat center center
 
     +media-breakpoint-down(md)
-      &.after,
-      &.before
+      &.after-list,
+      &.before-list
         &::before,
         &::after
           display: none
@@ -79,7 +79,7 @@
     > span
       color: $accent
 
-    &.before
+    &.before-list
       &::before
         content: ''
         display: block
@@ -90,7 +90,7 @@
         height: 79px
         background: url(../img/leaves-2.svg) no-repeat center center
 
-    &.after
+    &.after-list
       &::after
         content: ''
         display: block
@@ -103,8 +103,8 @@
         transform: scaleY(-1)
 
     +media-breakpoint-down(md)
-      &.after,
-      &.before
+      &.after-list,
+      &.before-list
         &::before,
         &::after
           display: none

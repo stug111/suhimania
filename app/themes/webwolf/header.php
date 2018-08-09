@@ -142,9 +142,9 @@
                      data-jstore-src="largeImageUrl">
             </div>
         </div>
-        <div class="lsp-block-item-category align-item">
-
-        </div>
+        <% if(tags.length){ %><div class="jstore-tag lsp-block-item-tags"><% _.each(tags, function(tag){ %><!--
+        --><span data-id="<%= tag.translitName %>" class="jstore-tag lsp-block-item-tag <%= tag.className %>" title="<%= tag.name %>"></span><!--
+    --><% }); %></div><% } %>
         <div class="jstore-tag lsp-block-item-name">
             <span class="jstore-tag jstore-js-detailLink"><%= name %></span>
         </div>

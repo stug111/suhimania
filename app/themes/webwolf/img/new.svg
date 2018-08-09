@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="44" viewBox="0 0 44 44">
+    <defs>
+        <path id="a" d="M22 44c12.15 0 22-9.85 22-22S34.15 0 22 0 0 9.85 0 22s9.85 22 22 22z"/>
+        <mask id="b" width="44" height="44" x="0" y="0" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <use fill="#131417" fill-opacity=".3" stroke="#FFF" stroke-dasharray="5" stroke-width="2" mask="url(#b)" xlink:href="#a"/>
+        <text fill="#FFF" font-family="PFDinDisplayPro-Black, PF DinDisplay Pro" font-size="13" font-weight="700" letter-spacing=".5">
+            <tspan x="6.904" y="27">NEW</tspan>
+        </text>
+    </g>
+</svg>

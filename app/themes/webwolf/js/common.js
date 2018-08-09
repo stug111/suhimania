@@ -30,21 +30,6 @@ jQuery(document).ready(function($) {
 
     jStoreEvents.push(['pageChanged', null, function(data){
 
-        $('.lsp-block-item').on("touchstart", function (e) {
-            'use strict'; //satisfy code inspectors
-            var link = $(this); //preselect the link
-            if (link.hasClass('hover')) {
-                link.removeClass('hover');
-                return false;
-            }
-            else {
-                link.addClass('hover');
-                $('.lsp-block-item').not(this).removeClass('hover');
-                e.preventDefault();
-                return false; //extra, and to make sure the function has consistent return points
-            }
-        });
-
         if($('*').is('.lsp-block-success-order')) {
             $('.jstore-cart-total, .checkout__minimum').hide();
         }

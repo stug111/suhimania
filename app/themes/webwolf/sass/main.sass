@@ -29,6 +29,10 @@ body
 		&:required:valid
 			border-color: green
 
+	&.overflow
+		+media-breakpoint-down(md)
+			overflow: hidden
+
 .img-responsive
 	display: block
 	max-width: 100%

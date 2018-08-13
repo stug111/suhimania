@@ -222,7 +222,7 @@
         </div>
     </div>
 
-    <div id="<?= get_theme_mod('order_phone') ?>" class="modal modal__job">
+    <div id="<?= get_theme_mod('order_phone') ?>" class="modal modal__job model__order">
         <div class="modal__placeholder"></div>
         <div class="modal__content">
             <div class="modal__close"></div>

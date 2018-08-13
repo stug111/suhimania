@@ -195,6 +195,16 @@ add_filter('upload_mimes', 'cc_mime_types');
 // Enable shortcodes in text widgets
  add_filter('widget_text','do_shortcode');
 
+/* Меняет текст чекбокса GDPR */
+function comment_form_change_cookies_consent( $fields ) {
+    $commenter = wp_get_current_commenter();
+    $consent   = empty( $commenter['comment_author_email'] ) ? '' : ' checked="checked"';
+    $fields['cookies'] = '<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"' . $consent . ' />' .
+        '<label for="wp-comment-cookies-consent">Сохранить моё имя и email в этом браузере для последующих моих комментариев.</label></p>';
+    return $fields;
+}
+add_filter( 'comment_form_default_fields', 'comment_form_change_cookies_consent' );
+
 /**
  * Implement the Custom Header feature.
  */

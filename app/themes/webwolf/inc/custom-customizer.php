@@ -164,4 +164,17 @@ add_action('customize_register', function($customizer) {
         )
     );
 
+    $customizer->add_setting(
+        'order_phone', array('default' => '')
+    );
+    $customizer->add_control(
+        'order_phone',
+        array(
+            'label' => 'ID блока Заказать звонок',
+            'section' => 'settings-site',
+            'type' => 'text',
+            'description' => ''
+        )
+    );
+
 });

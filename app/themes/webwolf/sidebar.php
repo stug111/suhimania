@@ -36,7 +36,7 @@
             <?php if(!get_theme_mod('phone_2') == '') : ?>
                 <a class="site-sidebar__phone" href="tel:<?php echo get_theme_mod('phone_2') ?>"><?php echo get_theme_mod('phone_2') ?></a>
             <?php endif; ?>
-            <a class="site-sidebar__order" href="#">Заказать звонок</a>
+            <a class="site-sidebar__order" href="#<?= get_theme_mod('order_phone') ?>" data-modal="modal">Заказать звонок</a>
         </div>
         <nav id="site-navigation" class="site-sidebar__menu">
             <?php

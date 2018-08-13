@@ -29,13 +29,13 @@
                             ?>
                             <div class="stock__block" style="background: url('<?= $stock['stock_image'] ?>') no-repeat center center / cover">
                                 <h2 class="stock__title <?= $class ?>">
-                                    <?= $stock['stock_title']; ?>
+                                    <?= $stock['stock_title'] ?>
                                 </h2>
                                 <div class="stock__sub-title <?= $class ?>">
-                                    <?= $stock['stock_description']; ?> <span>*</span>
+                                    <?= $stock['stock_description'] ?> <span>*</span>
                                 </div>
                                 <div class="stock__bottom">
-                                    <span>*</span> <?= $stock['stock_advanced']; ?>
+                                    <span>*</span> <?= $stock['stock_advanced'] ?>
                                 </div>
                             </div>
                         <?php } ?>

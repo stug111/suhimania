@@ -21,6 +21,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
+                        <?php var_dump( $stocks ) ?>
                         <?php foreach ( $stocks as $key => $stock ) { ?>
                             <?php
 
@@ -29,7 +30,7 @@
                             ?>
                             <div class="stock__block" style="background: url('<?= $stock['stock_image'] ?>') no-repeat center center / cover">
                                 <h2 class="stock__title <?= $class ?>">
-                                    <?= $stock['stock_title'] ?>
+
                                 </h2>
                                 <div class="stock__sub-title <?= $class ?>">
                                     <?= $stock['stock_description'] ?> <span>*</span>

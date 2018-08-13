@@ -133,7 +133,7 @@ function artabr_remove_name_cat( $title ){
 function webwolf24_scripts() {
 	wp_enqueue_style( 'webwolf24-style', get_stylesheet_uri() );
 
-    wp_enqueue_style( 'main-style', get_template_directory_uri() . '/css/main.css' );
+    wp_enqueue_style( 'main-style', get_template_directory_uri() . '/css/main.css', array(), time());
 
     wp_enqueue_script( 'jquery');
 

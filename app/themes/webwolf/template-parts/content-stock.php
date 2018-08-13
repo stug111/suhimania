@@ -27,7 +27,7 @@
                                 ($key%2) ? $class = 'before-list' : $class = 'after-list';
 
                             ?>
-                            <div class="stock__block" style="background: url('<?= $stock['stock_image'] ?>') no-repeat center center / cover">
+                            <div class="stock__block" style="background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('<?= $stock['stock_image'] ?>') no-repeat center center / cover">
                                 <h2 class="stock__title <?= $class ?>">
                                     <?= $stock['stock_title'] ?>
                                 </h2>

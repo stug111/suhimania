@@ -1,5 +1,4 @@
 .checkout-form
-  .lsp-js-form-field-email,
   .lsp-js-form-field-delivery_city,
   //.lsp-js-form-field-housing,
   //.lsp-js-form-field-apartment,
@@ -42,7 +41,7 @@
         width: 100%
 
   .lsp-js-delivery-type-cont-delivery
-    order: 4
+    order: 5
     width: 100%
     display: flex
     flex-wrap: wrap
@@ -81,15 +80,23 @@
       width: 100%
       margin-left: 0
 
+  .lsp-js-form-field-email
+    order: 4
+    width: calc(50% - calc(15px / 2))
+    margin-right: calc(15px / 2)
+    +media-breakpoint-down(xs)
+      width: 100%
+      margin-right: 0
+
   .lsp-js-form-field-message
-    order: 6
+    order: 7
     width: 100%
 
   .lsp-js-form-field-person_count
-    order: 5
+    order: 6
 
   .lsp-js-form-field-payment_type
-    order: 7
+    order: 8
     width: 100%
     .label-row-text
       width: 100%
@@ -104,10 +111,10 @@
       flex-wrap: wrap
 
   .lsp-js-form-field-userAgreement
-    order: 8
+    order: 9
 
   .lsp-js-form-field-userAgreement + .jstore-tag.label-row
-    order: 9
+    order: 10
     .lsp-button
       display: flex
       align-items: center

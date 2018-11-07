@@ -1,34 +1,22 @@
 input[type="checkbox"]
-  display: none
-
-.after-checkbox::after
-  content: ''
-  display: block
+  width: 0 !important
+  height: 0
   position: absolute
-  top: 4.5px
-  left: 3.5px
-  width: 9px
-  height: 5px
-  border-bottom: 2px solid $accent
-  border-left: 2px solid $accent
-  transform: rotate(-45deg)
-
-input[type="checkbox"]
-  & + label
-    position: relative
-    padding-left: 20px
-    &::before
-      content: ''
-      display: block
-      position: absolute
-      width: 16px
-      height: 16px
-      background: $white
-      left: 0
-      top: -2px
-      border-radius: 50%
-
-  &:checked + label
+  left: 0
+  top: 0
+  margin-left: 2px
+  &::before
+    content: ''
+    display: block
+    position: absolute
+    width: 16px
+    height: 16px
+    background: $white
+    left: 0
+    top: -2px
+    border-radius: 50%
+    margin-left: -2px
+  &:checked
     &::after
       content: ''
       display: block
@@ -37,6 +25,7 @@ input[type="checkbox"]
       left: 3.5px
       width: 9px
       height: 5px
+      margin-left: -2px
       border-bottom: 2px solid $accent
       border-left: 2px solid $accent
       transform: rotate(-45deg)

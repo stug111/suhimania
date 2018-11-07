@@ -17,6 +17,10 @@ jQuery(document).ready(function($) {
             }
         });
 
+        $("select").select2({
+            minimumResultsForSearch: -1
+        });
+
         // Замена url в меню
         var link = $('#lsp-block-tree .lsp-js-block-tree-item');
 
@@ -34,39 +38,11 @@ jQuery(document).ready(function($) {
             $('.jstore-cart-total, .checkout__minimum').hide();
         }
 
-        $('input[type="radio"]').parent().addClass('before');
-        $('input[type="checkbox"]').parent().addClass('before');
-
-        checkedButton();
-        checkedCheckbox();
-
-        $('input[type="radio"], input[type="checkbox"]').on('click', function() {
-            checkedButton();
-            checkedCheckbox();
-        });
-
         $('.site-header__mobile-menu li a').on('click', function() {
             $('html, body').scrollTop(0);
             $('.site-header__mobile-menu').removeClass('active');
 
-        });
-
-        $('.lsp-js-submit').on('click', function() {
-
-            setTimeout(function() {
-
-                $('input[type="radio"]').parent().addClass('before');
-                $('input[type="checkbox"]').parent().addClass('before');
-
-                checkedButton();
-                checkedCheckbox();
-
-                $('input[type="radio"], input[type="checkbox"]').on('click', function() {
-                    checkedButton();
-                    checkedCheckbox();
-                });
-            }, 1500);
-        });
+        })
 
     }]);
 
@@ -76,35 +52,6 @@ jQuery(document).ready(function($) {
         e.preventDefault();
         $('.site-header__mobile-menu').toggleClass('active');
     });
-
-    /*
-     * Переключение чекбоксов и радио кнопок
-     */
-    function checkedButton () {
-        var radio = $('input[type="radio"]');
-
-        $.each(radio, function(index, el) {
-           if( $(el).prop('checked') == true ) {
-               $(this).parent().addClass('after');
-           } else {
-               $(this).parent().removeClass('after');
-           }
-
-        });
-    }
-
-    function checkedCheckbox () {
-        var checkbox = $('input[type="checkbox"]');
-
-        $.each(checkbox, function(index, el) {
-            if( $(el).prop('checked') == true ) {
-                $(this).parent().addClass('after-checkbox');
-            } else {
-                $(this).parent().removeClass('after-checkbox');
-            }
-
-        });
-    }
 
     /*
      * Модалки

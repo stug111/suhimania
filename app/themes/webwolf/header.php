@@ -18,7 +18,7 @@
     <meta name="fragment" content="!">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-   <!-- <link href="//deliveryWiget.iiko.ru/v2_0/assets/css/style.css" rel="stylesheet" type="text/css" media="screen" /> -->
+   <link href="//deliveryWiget.iiko.ru/v2_0/assets/css/style.css" rel="stylesheet" type="text/css" media="screen" />
     <script type="text/javascript">
         window.jStoreConfig = {
             'restaurant' : '51db4588-4cd5-11e5-80c1-d8d385655247',

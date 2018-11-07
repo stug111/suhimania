@@ -147,8 +147,6 @@ function webwolf24_scripts() {
 
 		wp_enqueue_script( 'webwolf24-map', '//api-maps.yandex.ru/2.1/?lang=ru_RU');
 		
-		wp_enqueue_script( 'webwolf24-select2', get_template_directory_uri() . '/libs/select2/js/select2.full.min.js');
-
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

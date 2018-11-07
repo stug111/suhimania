@@ -1,13 +1,25 @@
-.select2-container--default .select2-selection--single
+select
   background: $grey3
   border: 0
   border-radius: 0
-  height: 40px
-
-.select2-container--default .select2-selection--single .select2-selection__rendered
-  line-height: 40px
   color: rgba(255,255,255,0.3)
 
-.select2-container--default .select2-selection--single .select2-selection__arrow
-  height: 40px
-  top: -3px
+@media screen and (-webkit-min-device-pixel-ratio:0)
+  select 
+    height: 40px
+    line-height: 40px
+
+
+select::-moz-focus-inner
+  border: 0
+  padding: 0
+
+@-moz-document url-prefix()
+  select
+    padding: 20px 0!important
+    
+  
+@media screen\0
+  select
+    height: 40px
+    line-height: 40px

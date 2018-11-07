@@ -17,10 +17,6 @@ jQuery(document).ready(function($) {
             }
         });
 
-        $("select").select2({
-            minimumResultsForSearch: -1
-        });
-
         // Замена url в меню
         var link = $('#lsp-block-tree .lsp-js-block-tree-item');
 

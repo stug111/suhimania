@@ -205,7 +205,7 @@ function comment_form_change_cookies_consent( $fields ) {
         '<label for="wp-comment-cookies-consent">Сохранить моё имя и email в этом браузере для последующих моих комментариев.</label></p>';
     return $fields;
 }
-add_filter( 'comment_form_default_fields', 'comment_form_change_cookies_consent' )
+add_filter( 'comment_form_default_fields', 'comment_form_change_cookies_consent' );
 
 /**
  * Implement the Custom Header feature.

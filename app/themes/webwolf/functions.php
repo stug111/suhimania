@@ -205,15 +205,7 @@ function comment_form_change_cookies_consent( $fields ) {
         '<label for="wp-comment-cookies-consent">Сохранить моё имя и email в этом браузере для последующих моих комментариев.</label></p>';
     return $fields;
 }
-add_filter( 'comment_form_default_fields', 'comment_form_change_cookies_consent' );
-
-function vc_remove_wp_ver_css_js( $src ) {
-	if ( strpos( $src, 'ver=' ) )
-			$src = remove_query_arg( 'ver', $src );
-	return $src;
-}
-add_filter( 'style_loader_src', 'vc_remove_wp_ver_css_js', 9999 );
-add_filter( 'script_loader_src', 'vc_remove_wp_ver_css_js', 9999 );
+add_filter( 'comment_form_default_fields', 'comment_form_change_cookies_consent' )
 
 /**
  * Implement the Custom Header feature.

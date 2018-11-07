@@ -1,0 +1,65 @@
+#lsp-block-popup.jstore-tag
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  z-index: 99999
+  background: rgba($text,.3)
+
+#lsp-block-popup .lsp-popup-cont
+  position: absolute
+  top: auto !important
+  max-width: 900px
+  width: 100%
+  background: #FFF
+  z-index: 1000
+
+#lsp-block-popup .lsp-popup-cross
+    width: 19px
+    height: 19px
+    position: absolute
+    top: 12px
+    right: 12px
+    cursor: pointer
+
+#lsp-block-city-change, #lsp-block-terminal-change
+  text-align: center
+
+#lsp-block-items-popup, #lsp-block-city-change, #lsp-block-terminal-change
+  overflow: visible
+  position: inherit
+
+#lsp-block-city-change .h1, #lsp-block-terminal-change .h1
+  margin: 15px
+  text-align: center
+  font-size: 2.4rem
+  color: $text
+
+.jstore-tag.cityList
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  margin: 0 0 40px 0
+
+#lsp-block-city-change .cityItem, #lsp-block-terminal-change .cityItem
+  cursor: pointer
+  display: inline-block
+  padding: 20px
+  margin: 10px
+  line-height: 20px
+  min-width: 100px
+  font-size: 18px
+  border: 1px solid transparent
+  float: none
+  text-transform: uppercase
+  text-decoration: none
+  text-align: center
+  transition: all 0.25s ease
+
+#lsp-block-city-change .cityItem:hover, #lsp-block-terminal-change .cityItem:hover
+  color: #fff
+  background-color: $accent

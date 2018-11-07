@@ -11,6 +11,7 @@
 
 <div class="site-sidebar__ancore">
     <div class="site-sidebar">
+        <div class="lsp-block-terminalinfo jstore-block"></div>
         <div>
             <div class="site-sidebar__logo">
                 <?php the_custom_logo(); ?>

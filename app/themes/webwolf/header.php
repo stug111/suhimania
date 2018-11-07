@@ -18,7 +18,7 @@
     <meta name="fragment" content="!">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-<!--    <link href="//deliveryWiget.iiko.ru/v2_0/assets/css/style.css" rel="stylesheet" type="text/css" media="screen" />-->
+   <!-- <link href="//deliveryWiget.iiko.ru/v2_0/assets/css/style.css" rel="stylesheet" type="text/css" media="screen" /> -->
     <script type="text/javascript">
         window.jStoreConfig = {
             'restaurant' : '51db4588-4cd5-11e5-80c1-d8d385655247',
@@ -42,11 +42,12 @@
             ]
         };
     </script>
-    <script data-main="//deliverywiget.iiko.ru/v2_0/app/config" src="//deliverywiget.iiko.ru/v2_0/libs/require.js"></script>
-	<?php wp_head(); ?>
+    <script data-main="//deliverywiget.iiko.ru/v2_0/app/config" src="//deliverywiget.iiko.ru/v2_0/libs/require.js"></script>	
+    <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
+<div id='jstore-css'>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'webwolf24' ); ?></a>
 
@@ -229,7 +230,5 @@
             <?= do_shortcode('[contact-form-7 id="'. get_theme_mod('order_phone') .'"]'); ?>
         </div>
     </div>
-
-
 
 	<div id="content" class="site-content">
